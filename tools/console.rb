@@ -21,7 +21,15 @@ tony = VentureCapitalist.new("Tony", 540000000)
 broke = VentureCapitalist.new("Broke Boy", 54000)
 carl = VentureCapitalist.new("Carl", 20000000)
 
-
+#Funding Round
+FundingRound.new(a, ted, "Series A", 100000000)
+FundingRound.new(b, jones, "Series A", 40000000)
+FundingRound.new(c, tony, "Series A", 3000000)
+FundingRound.new(d, broke, "Series A", 799999000)
+FundingRound.new(e, carl, "Series A", 20000000)
+FundingRound.new(a, jones, "Series B", 300000)
+FundingRound.new(b, tony, "Series B", 50000)
+FundingRound.new(c, ted, "Series B", 70000000)
 
 binding.pry
 0 #leave this here to ensure binding.pry isn't the last line

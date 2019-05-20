@@ -1,5 +1,6 @@
 class Startup
-  attr_accessor :name, :founder, :domain
+  attr_accessor :name
+  attr_reader :founder, :domain
 
   @@all = []
 
@@ -36,18 +37,22 @@ class Startup
   end
 
   def num_funding_rounds
+    FundingRound.all.select {|round| round.startup == self}.count
+  end
+
+  def all_rounds
     FundingRound.all.select {|round| round.startup == self}
   end
 
   def total_funds
     total = 0
-    num_funding_rounds.each {|round| total += round.investment}
+    all_rounds.each {|round| total += round.investment}
     total
   end
 
   def investors
     funds = []
-    num_funding_rounds.each {|round| funds << round.venturecapitalist}
+    all_rounds.each {|round| funds << round.venturecapitalist}
     funds.uniq
   end
 

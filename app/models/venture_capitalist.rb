@@ -30,7 +30,7 @@ class VentureCapitalist
     funding_rounds.each {|round| companies << round.startup}
     companies.uniq
   end
-
+  
   def biggest_investment
     largest_funding = 0
     largest_round = nil
