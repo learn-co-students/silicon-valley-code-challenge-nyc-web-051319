@@ -84,26 +84,26 @@ We've provided you with a console that you can use to test your code. To enter a
 
 <!-- - `Startup#sign_contract`
   - given a **venture capitalist object**, type of investment (as a string), and the amount invested (as a float), creates a new funding round and associates it with that startup and venture capitalist. -->
-- `Startup#num_funding_rounds`
+<!-- - `Startup#num_funding_rounds`
   - Returns the total number of funding rounds that the startup has gotten
 - `Startup#total_funds`
-  - Returns the total sum of investments that the startup has gotten
+  - Returns the total sum of investments that the startup has gotten -->
 <!-- - `Startup#investors`
   - Returns a **unique** array of all the venture capitalists that have invested in this company -->
-- `Startup#big_investors`
-  - Returns a **unique** array of all the venture capitalists that have invested in this company and are in the Trés Commas club
+<!-- - `Startup#big_investors`
+  - Returns a **unique** array of all the venture capitalists that have invested in this company and are in the Trés Commas club -->
 
 #### VentureCapitalist
 
 <!-- - `VentureCapitalist#offer_contract`
   - given a **startup object**, type of investment (as a string), and the amount invested (as a float), creates a new funding round and associates it with that startup and venture capitalist. -->
-- `VentureCapitalist#funding_rounds`
-  - returns an array of all funding rounds for that venture capitalist
+<!-- - `VentureCapitalist#funding_rounds`
+  - returns an array of all funding rounds for that venture capitalist -->
 <!-- - `VentureCapitalist#portfolio`
   - Returns a **unique** list of all startups this venture capitalist has funded -->
-- `VentureCapitalist#biggest_investment`
-  - returns the largest funding round given by this venture capitalist
-- `VentureCapitalist#invested`
-  - given a **domain string**, returns the total amount invested in that domain
+<!-- - `VentureCapitalist#biggest_investment`
+  - returns the largest funding round given by this venture capitalist -->
+<!-- - `VentureCapitalist#invested`
+  - given a **domain string**, returns the total amount invested in that domain -->
 
 ---
